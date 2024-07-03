@@ -21,4 +21,4 @@ config MULTIPLEXER_INIT_PRIORITY
 	help
 	  System initialization priority for multiplexer drivers.
 
-endif # MULTIPLEXOR
+endif # MULTIPLEXER
