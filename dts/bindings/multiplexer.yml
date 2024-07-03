@@ -1,0 +1,15 @@
+# Copyright (c) 2024 Justin's Engineering Services LLC
+# SPDX-License-Identifier: Apache-2.0
+
+description: |
+  Generic multiplexer bindings
+compatible: "multiplexer"
+
+include: [base.yaml]
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: |
+      GPIO phandles and specifiers for the multiplexer select pins.

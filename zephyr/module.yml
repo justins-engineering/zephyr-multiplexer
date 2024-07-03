@@ -1,0 +1,11 @@
+# Copyright (c) 2024 Justin's Engineering Services LLC
+# SPDX-License-Identifier: Apache-2.0
+
+build:
+  cmake: .
+  kconfig: Kconfig.nrf
+  sysbuild-cmake: sysbuild
+  sysbuild-kconfig: sysbuild/Kconfig.sysbuild
+  settings:
+    dts_root: .
+    module_ext_root: .

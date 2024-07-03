@@ -1,0 +1,24 @@
+# Top-level configuration file for multiplexer drivers.
+
+# Copyright (c) 2024 Justin's Engineering Services LLC
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig MULTIPLEXER
+	bool "Multiplexer drivers"
+  depends on GPIO
+	help
+	  Include multiplexer drivers in the system configuration.
+
+if MULTIPLEXER
+
+module = MULTIPLEXER
+module-str = multiplexer
+source "subsys/logging/Kconfig.template.log_config"
+
+config MULTIPLEXER_INIT_PRIORITY
+	int "Multiplexor initialization priority"
+	default 90
+	help
+	  System initialization priority for multiplexer drivers.
+
+endif # MULTIPLEXOR
