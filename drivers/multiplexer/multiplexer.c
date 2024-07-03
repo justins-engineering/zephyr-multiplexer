@@ -61,7 +61,7 @@ static int multiplexer_init(const struct device *dev) {
                                                                       \
   DEVICE_DT_INST_DEFINE(                                              \
       inst, multiplexer_init, NULL, NULL, &multiplexer_##inst##_cfg,  \
-      POST_KERNEL, KERNEL_INIT_PRIORITY_DEVICE, NULL                  \
+      POST_KERNEL, CONFIG_MULTIPLEXER_INIT_PRIORITY, NULL                  \
   );
 
 DT_INST_FOREACH_STATUS_OKAY(MULTIPLEXER_DEVICE)
