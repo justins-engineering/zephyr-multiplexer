@@ -11,6 +11,10 @@ menuconfig MULTIPLEXER
 
 if MULTIPLEXER
 
+module = MULTIPLEXER
+module-str = multiplexer
+source "subsys/logging/Kconfig.template.log_config"
+
 config MULTIPLEXER_INIT_PRIORITY
 	int "Multiplexor initialization priority"
 	default 90

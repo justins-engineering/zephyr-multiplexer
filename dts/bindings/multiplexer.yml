@@ -12,4 +12,4 @@ properties:
     type: phandle-array
     required: true
     description: |
-      GPIO phandles and specifiers for the multiplexer select pins.
+      GPIO phandles for the multiplexer select pins in ascending order.
