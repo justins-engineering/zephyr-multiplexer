@@ -9,6 +9,6 @@
 #include <zephyr/device.h>
 #include <zephyr/types.h>
 
-int mux_set_active_port(const struct device *dev, uint8_t output_pin);
+int mux_set_active_port(const struct device *dev, const int mux_port);
 
 #endif // ZEPHYR_DRIVERS_MULTIPLEXER_H_
